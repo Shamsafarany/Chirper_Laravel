@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad874bdf2dc08c4892f8a96cdea87203",
+    "content-hash": "e04545536f7bd75f11077916d216362d",
     "packages": [
         {
             "name": "brick/math",
@@ -3304,6 +3304,59 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.9.2"
             },
             "time": "2025-12-14T04:43:48+00:00"
+        },
+        {
+            "name": "rehmanafzal/dbmanager",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rehmanafzal536/dbmanager.git",
+                "reference": "06b8a8f6feb94111f5f3e77eafc86d84d8e98215"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rehmanafzal536/dbmanager/zipball/06b8a8f6feb94111f5f3e77eafc86d84d8e98215",
+                "reference": "06b8a8f6feb94111f5f3e77eafc86d84d8e98215",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^9.0|^10.0|^11.0|^12.0|^13.0",
+                "illuminate/routing": "^9.0|^10.0|^11.0|^12.0|^13.0",
+                "illuminate/support": "^9.0|^10.0|^11.0|^12.0|^13.0",
+                "php": "^8.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Devtoolkit\\DbManager\\DbManagerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Devtoolkit\\DbManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A powerful database manager for Laravel — supports SQLite & MySQL with a clean UI",
+            "keywords": [
+                "admin",
+                "database",
+                "dbmanager",
+                "laravel",
+                "manager",
+                "mysql",
+                "sqlite"
+            ],
+            "support": {
+                "issues": "https://github.com/rehmanafzal536/dbmanager/issues",
+                "source": "https://github.com/rehmanafzal536/dbmanager/tree/v1.0.0"
+            },
+            "time": "2026-04-08T11:20:04+00:00"
         },
         {
             "name": "symfony/clock",
