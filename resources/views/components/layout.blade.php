@@ -29,7 +29,7 @@
 
     <footer class="footer footer-center p-5 bg-base-300 text-base-content text-xs">
         <div>
-            <p>© {{ " ".$year." " }} Chirper - Built with Laravel and ❤️</p>
+            <p>© {{$year}} - Built with Laravel and ❤️</p>
         </div>
     </footer>
 </body>
