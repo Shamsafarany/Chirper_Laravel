@@ -18,11 +18,11 @@
             @endif
             <div>
                 <div class="flex items-center space-x-1">
-                <p class="font-semibold">{{$chirp->user ? $chirp->user->name: 'Anonymous' }}</p>
+                <span class="font-semibold">{{$chirp->user ? $chirp->user->name: 'Anonymous' }}</span>
                 <span class="text-based-content/60">.</span>
-                <p class="text-sm text-base-content/60">{{ $chirp->created_at->diffForHumans() }}</p>
+                <span class="text-sm text-base-content/60">{{ $chirp->created_at->diffForHumans() }}</span>
             </div>
-            <p class="mt-1">{{ $chirp->message }}</p>
+            <span class="mt-1">{{ $chirp->message }}</span>
             </div>
         </div>
     </div>
