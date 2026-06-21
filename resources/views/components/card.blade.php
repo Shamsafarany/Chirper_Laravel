@@ -31,17 +31,18 @@
                     <span class="text-base-content/60 italic">edited</span>
                     @endif
                 </div>
-                
-                <div class="flex gap-1">
-                    <a href="{{ route('edit', $chirp->id)}}" class="btn btn-ghost btn-xs">Edit</a>
-                    <form action="{{route('destroy', $chirp->id)}}" method="POST" >
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-ghost btn-xs text-error" onclick="return confirm('Are you sure you want to delete this chirp?')">
-                            Delete
-                        </button>
-                    </form>
-                </div>
+                @if(auth()->check() && auth()->id() === $chirp->user_id)
+                    <div class="flex gap-1">
+                        <a href="{{ route('edit', $chirp->id)}}" class="btn btn-ghost btn-xs">Edit</a>
+                        <form action="{{route('destroy', $chirp->id)}}" method="POST" >
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-ghost btn-xs text-error" onclick="return confirm('Are you sure you want to delete this chirp?')">
+                                Delete
+                            </button>
+                        </form>
+                    </div>
+                @endif
                 </div>
                 <p class="mt-1 break-words whitespace-pre-wrap">{{ $chirp->message }}</p>
             </div>
